@@ -1,62 +1,138 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="canvas.css" />
-    <link rel="stylesheet" href="present.css" />
-    <link rel="stylesheet" href="card.css" />
-    <link rel="stylesheet" href="index.css" />
-    <script src="jquery.js"></script>
-  </head>
-  <body>
-    <div class="parent">
-      <canvas id="canvas"></canvas>
-      <section class="above-fold">
-        <div class="wrap-present">
-          <div class="present-box" id="present">
-            <div class="present">
-              <div class="img-wrap" id="present-image"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="website icon" type="png" href="image/heart.png"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chúc mừng sinh nhật Thiện nha</title>
+</head>
+<body>
+    <div class="container">
+        <div class="boxcontainer">
+            <div class="image">
+                <img src="flag.png" alt="">
             </div>
-            <div class="side front"></div>
-            <div class="side back"></div>
-            <div class="side left"></div>
-            <div class="side right"></div>
-            <div class="side top">
-              <span class="to">
-                <span class="name" id="nametag"> </span>
-              </span>
+            <div class="text-happybirthday">
+                <img src="texthappy.png" alt="">
             </div>
-            <div class="side bottom"></div>
-          </div>
+            <div class="cake">
+                <img src="cake.png" alt="">
+            </div>
+            <div class="box-balloon">
+                <div class="balloon-item1">
+                    <img src="balloon.png" alt="">
+                </div>
+                <div class="balloon-item1">
+                    <img src="balloon.png" alt="">
+                </div>
+            </div>
+            <div class="box-cloud">
+                <div class="cloud">
+                    <img src="cloud.png" alt="">
+                </div>
+                <div class="cloud">
+                    <img src="cloud.png" alt="">
+                </div>
+            </div>
+            <div class="box-firework">
+                <div class="firework">
+                    <img src="firework.png" alt="">
+                    <img src="firework1.png" alt="" id="firework1">
+                </div>
+                <div class="firework">
+                    <img src="firework.png" alt="">
+                    <img src="firework1.png" alt="" id="firework1">
+                </div>
+            </div>
+            <div class="paperCannons">
+                <img src="paperCannons1.png" alt="">
+            </div>
+            <div class="box-giftbox">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+            </div>
+            <div class="mail">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="boxcute">
+                <div class="cute1">
+                    <img src="cute.png" alt=""> <!-- thay ảnh -->
+                </div>
+                <div class="cute2">
+                    <img src="cute.png" alt="">
+                </div>
+            </div>
         </div>
-        <p class="info-text">Click to Open</p>
-      </section>
-
-      <div id="card">
-        <h4 class="title-card">💘little coder💘</h4>
-
-        <img
-          src="Tùng Linh.jpg"
-          class="honey"
-        />
-
-        <h4 class="content-card">
-          Thoáng chốc đã đến ngày 20-10, nhân ngày này thì tao tặng mày món quà gián tiếp thay vì món quà trực tiếp ,tất nhiên thì món quà này ko bằng món quà của Hào rồi, 
-          trong 3 năm cấp 3 thì sẽ có những khó khăn về kiến thức hay là thi đại học ở lớp 12 
-          tao chúc mày thành công trong cuộc sống và khỏe mạnh,Tao biết tao nói hơi nhiều rồi , nói chung là HỌC TỐT VỚI THÀNH CÔNG NHA
-        </h4>
-      </div>
+        <div class="boxMail">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="boxMail-container">
+                <div class="card1">
+                    <div class="userImg">
+                        <img src="Thiện.jpg" alt="">
+                    </div>
+                    <h3>Happy birthday</h3>
+                    <div class="imageCute">
+                        <img src="cute1.png" alt="">
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card2-content">
+                        <h3>Gủi tới bản thân tôi</h3>
+                        <h2>Hãy sống thật tốt và chúc mừng sinh nhật tôi , tuy tôi khá là cô đơn nhưng mà hãy thương yêu bản thân mình hơn nha</h2>
+                        <h2>Tuy chúc chúc hơi sớm.</h2>
+                        <h2>Kí tên</h2>
+                        <h2>Võ Hữu Thiện</h2> 
+                        <div class="imageCute2">
+                            <img src="cute2.png" alt="">
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <audio autoplay loop  id="playAudio">
-      <source src="nhacnen.mp3">
-    </audio>
-  </body>
-  <script src="config.js"></script>
-  <script src="canvas.js"></script>
-  <script src="present.js"></script>
-  <script>
-    
-  </script>
+</body>
+    <script>
+        document.addEventListener('mousemove', function(e){
+            let body = document.querySelector('body');
+            let heart = document.createElement('span');
+            let x = e.offsetX;
+            let y = e.offsetY;
+            heart.style.left = x+'px';
+            heart.style.top = y+'px';
+
+            let size = Math.random() * 10;
+            heart.style.width = 4 * size+'px';
+            heart.style.height = 4 * size+'px';
+
+
+            let transformValue = Math.random() * 360;
+            heart.style.transform = 'rotate('+ transformValue +'deg)';
+
+            body.appendChild(heart);
+
+            setTimeout(function(){
+                heart.remove();
+            },1000)
+        })
+
+
+        let mailBox = document.querySelector('.mail')
+        let boxmail = document.querySelector('.boxMail')
+        var close = document.querySelector('.fa-xmark')
+        mailBox.onclick = function(){
+            mailBox.classList.toggle('active')
+            boxmail.classList.add('active')
+        }
+
+        close.addEventListener('click', function(){
+            boxmail.classList.remove('active')
+        })
+    </script>
 </html>
